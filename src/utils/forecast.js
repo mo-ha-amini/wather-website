@@ -15,7 +15,10 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        body.current.weather_descriptions +
+        'Check Time : '+
+          body.current.observation_time +
+          ' .  ' +
+          body.current.weather_descriptions +
           ' It is currently ' +
           body.current.temperature +
           ' degress out. There is a ' +
